@@ -1,3 +1,5 @@
+const readlineSync = require('readline-sync');
+
 function somaDobrada(a: number, b:number){
     if (a===b){
         console.log((a+b)*2);
@@ -10,4 +12,10 @@ function somaDobrada(a: number, b:number){
     }
 }
 
-somaDobrada(0,1)
+
+
+//const a = readlineSync.number('Digite um numero: ');
+
+//const b = readlineSync.number('Digite um numero: ');
+
+somaDobrada(1,2)
