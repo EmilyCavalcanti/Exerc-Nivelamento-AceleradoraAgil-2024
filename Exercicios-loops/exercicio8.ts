@@ -1,38 +1,37 @@
 //8-Faça um programa (o usuário deverá informar a quantidade de números que será informada)e ao final diga qual o valor do maior e do menor número digitado.
 
+const entrada = require('readline-sync');
+const quantidade = entrada.question('Escolha a quantidade de números a serem digitados: ');
 
+let numeroDigitado:number[] = [];
+let contador:number=0;
+let maior:number;
+let menor:number;
 
-/*function receberMaiorMenor(m:number,n:){
-    
-    let contador = 0;
-    let lista : number[] = [n];
+function pegarNumeros(){
+    while(contador < Number(quantidade)){
+        let numero = entrada.question('Digite um número: ');  
+        let numeroConvertido = Number(numero);
 
-    for (let i = 0; i < m; i++ ){
-      let numero: number = 
-        
-        if(contador %2 ==0){
-
-             console.log(contador);     
-             quantidadeNumeros++
-    }    
-
+        numeroDigitado.push(numeroConvertido); 
         contador++
     }
-//    console.log(`A quantidade de números pares impressos foi ${quantidadeNumeros}`);
 }
-receberMaiorMenor(1,11);
 
-//Valor retornado: Ana Roberta
-/*nomes = ["Alberto", "Alex", "Sandro", "Ana Roberta"];
-tamanhoNome = 0;
-nome = "";
-
-function maiorNome(item, indice) {
-    if (nomes[indice].length > tamanhoNome) {
-        nome = nomes[indice];
-        tamanhoNome = nomes[indice].length;
+function maiorMenor(){ //[2,1,3,5,4]
+    pegarNumeros();
+    for(let contador=0;contador<numeroDigitado.length;contador++){
+        for(let i=0;i<numeroDigitado.length;i++)
+            if(numeroDigitado[contador]>numeroDigitado[i]){
+                maior = numeroDigitado[contador];
+                menor = numeroDigitado[i];
+                numeroDigitado[contador]=menor;
+                numeroDigitado[i]=maior;
+            } 
+        }    
+        console.log(numeroDigitado);
+        console.log(`O maior número é ${numeroDigitado[0]} e o menor número é ${numeroDigitado.slice(-1)[0]}`);
     }
-}
 
-nomes.forEach(maiorNome);
-console.log(nome);*/
+
+maiorMenor();
