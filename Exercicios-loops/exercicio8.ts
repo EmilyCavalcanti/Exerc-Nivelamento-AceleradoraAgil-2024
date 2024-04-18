@@ -18,7 +18,7 @@ function pegarNumeros(){
     }
 }
 
-function maiorMenor(){ //[2,1,3,5,4]
+function maiorMenor(){ 
     pegarNumeros();
     for(let contador=0;contador<numeroDigitado.length;contador++){
         for(let i=0;i<numeroDigitado.length;i++)

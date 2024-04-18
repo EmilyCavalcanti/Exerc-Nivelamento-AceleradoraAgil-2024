@@ -1,35 +1,27 @@
 //Faça um programa que leia N numeros e ao final mostre os 3 maiores numeros digitados
 
 
-let maioresNumeros:number[]=[];
-
-function lerMaioresNumeros(){
-    for(let i=0; i<numerosDigitados.length;i++ ){
-      if(numerosDigitados[i]>numerosDigitados[i+1]){
-        let numero:number = numerosDigitados[i];
-        maioresNumeros.push(numero)
-      }
-    }    
-    console.log(maioresNumeros);
-  }
-   
-
-let numerosDigitados: number[] = [14,2,6,7,1];
-lerMaioresNumeros();
+let lista:number []= [14,2,6,25,69];
+let maiores: number;
+let menores: number;
 
 
+function ordenarNumeros(){ 
+    for(let contador=0;contador<lista.length;contador++){
+        for(let i=0;i<lista.length;i++)
+            if(lista[contador]>lista[i]){
+                maiores = lista[contador];
+                menores = lista[i];
+                lista[contador]=menores;
+                lista[i]=maiores;
+            }     
+        }    
 
-/*// Editando pouca coisa no código da pergunta
-function contem(){
-    for(var i = 0; i < array.length; i++){
-      if (array[i] == y){
-        return true;
-      }
+        for(let conta = 0; conta<3; conta++){
+            console.log (lista [conta]);
+        }
+    
     }
-    return false;
-  }
-  
-  var array = [1, 2, 3, 4, 5]
-  console.log(contem(array, 2))
-  console.log(contem(array, 4))
-  console.log(contem(array, 6))*/
+
+
+ordenarNumeros();
