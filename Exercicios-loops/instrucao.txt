@@ -1,0 +1,33 @@
+Faça um algoritmo que leia uma quantidade não determinada de números positivos:
+Entrada de dados que armazena as informações fornecedias;
+Transformar os dados de string em number.
+
+
+Calcule a quantidade de números pares e ímpares:
+Criar variavel par e variavel impar fora da função, que servirão como contador;
+Montar a estrutura if, e dentro colocar as condições que definam quais dados vao para a variavel par e quais vao para a variavel impar;
+Variavel par++ ou impar++.
+
+Calcule média de valores pares:
+Criar o array para salvar os valores pares, dentro do if;
+Através do método push salvarão os valores dentro do array;
+Criar uma variavel de soma fora da função, nela será armazenado o resultado da soma dos valores;
+Criar um for para percorrer os números do array e somar os valores;
+Calculo divindo o valor armazenado em soma pelo valor armazenado em numPar = mediaPar.
+
+Calcule a média geral dos números lidos.
+Criar a variavel de array, fora da função, para armazenar todos os numeros da entrada;
+Através do método push, após converter os dados para numero;
+Criar uma variavel de soma fora da função, nela será armazenado o resultado da somaTotal dos valores;
+Criar um for para percorrer os números do array e somar os valores;
+Calculo divindo o valor armazenado em somaTotal por numPar + numImpar = mediaTotal.
+
+O número que encerrará a leitura será 0
+Uso do if ternário
+
+Console.log
+numPar , numImpar, mediaPar, mediaTotal
+
+
+
+
