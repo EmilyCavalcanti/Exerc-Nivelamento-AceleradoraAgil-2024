@@ -29,5 +29,23 @@ Console.log
 numPar , numImpar, mediaPar, mediaTotal
 
 
+----------------------------------------------------
+//  
+
+Faça um programa no qual o usuário informe o número de médias a serem inseridas: 
+1-Criar uma coleção de objetos que irá receber um array para cada aluno, nome do aluno será string e media será number.
+ex: let medias_alunos:{
+    [aluno: "x", média: 8]
+}
+2- Criar a entrada do usuário e converter o valor para number.
+3- Uma entrada para informar a quantidade de alunos 
+4- Outra entrada para informar o nome do aluno e sua média.Atribuir os valores para a coleção de objetos que será criada fora da função.
+
+e após leia cada uma das médias juntamente com o nome do aluno:
+
+1-acessar a coleção do objeto com um loop e imprimir na tela as propriedades.
 
 
+Ao final do programa deverá informar a maior média juntamente com o nome do aluno que a obteve:
+1- Fazer um for para percorrer a propriedade media do objeto e dentro do for criar um if para comparar os valores das médias 
+2-imprimir o maior valor com o nome.
