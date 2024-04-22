@@ -55,11 +55,3 @@ alunoMedia.maiorMedia();
 
 
 
-/*let pessoas: Pessoa[] = [];
-
-function adicionarPessoa() {
-    const nome = readlineSync.question('Nome: ');
-    const idade = Number(readlineSync.question('Idade: '));
-    const pessoa: Pessoa = { nome, idade };
-    pessoas.push(pessoa);
-    adicionarPessoa(); */
