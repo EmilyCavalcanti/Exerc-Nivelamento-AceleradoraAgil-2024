@@ -1,3 +1,5 @@
+https://user-images.githubusercontent.com/359991/189957680-a8fa22bb-cc5e-47fc-8447-f02e63fdd13e.png
+
 Faça um algoritmo que leia uma quantidade não determinada de números positivos:
 Entrada de dados que armazena as informações fornecedias;
 Transformar os dados de string em number.

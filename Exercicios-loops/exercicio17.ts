@@ -16,27 +16,40 @@ class Alunos{
         this.media.push(nota);
     }
 
+    mediaTotal(){
+        if(this.media.length === 0) {
+            throw new Error("Lista vazia")
+        }
+        let notas =0;
+        for(let nota of this.media){
+            notas+=nota;
+        }
+        const resultado = notas/this.media.length;
+        console.log(`A média de todos os alunos foi:  ${resultado} Total de alunos: ${this.media.length}`)
+    }
+
+
     listarAlunos(){
         for(let i=0; i<this.aluno.length;i++){
             console.log(`Aluno: ${this.aluno[i]} / Media: ${this.media[i]}`)
         }
     }
-
 }
-let alunosMedia = new Aluno();
 
+let alunosMedia = new Alunos();
 
-for(let i =0; i; i++){
-    let nome:string = entradamedia.question('Digite o nome do aluno: (caso deseje finalizar, escreva FIM) ')
-    let notaDigitada:number = entradamedia.question('Digite a media do aluno: ')
+do{
+    let nome:string = entradaNomeMedia.question('Digite o nome do aluno: (caso deseje finalizar, escreva FIM) ')
+    if(nome.toLocaleUpperCase() === "FIM"){
+        break;
+    }
+    let notaDigitada:number = entradaNomeMedia.question('Digite a media do aluno: ')
     let nota = Number(notaDigitada)
-    alunoMedia.adicionarAluno(nome, nota);
+    alunosMedia.adicionarAluno(nome, nota);
+}while(true)
 
-}
-
-alunoMedia.listarAlunos()
-alunoMedia.maiorMedia();
- 
+alunosMedia.listarAlunos()
+alunosMedia.mediaTotal()
 
 
 
