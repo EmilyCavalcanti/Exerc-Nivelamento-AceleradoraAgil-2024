@@ -32,6 +32,7 @@ class Aluno{
                 maiorNota=nota;     
             }
         }
+        console.log(maiorNota)
         const index = this.media.indexOf(maiorNota);
         console.log(`Aluno com a maior media: ${this.aluno[index]} sua média foi ${this.media[index]}`)
     }
@@ -44,7 +45,8 @@ let quantidadeMedia = Number(quantidadeMedias);
 
 for(let i =0; i<quantidadeMedias; i++){
     let nome:string = entradamedia.question('Digite o nome do aluno: ')
-    let nota:number = entradamedia.question('Digite a media do aluno: ')
+    let notaDigitada:number = entradamedia.question('Digite a media do aluno: ')
+    let nota = Number(notaDigitada)
     alunoMedia.adicionarAluno(nome, nota);
 }
 
