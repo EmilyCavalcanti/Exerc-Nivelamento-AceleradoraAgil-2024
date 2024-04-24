@@ -54,9 +54,4 @@ Ao final do programa deverá informar a maior média juntamente com o nome do al
 
 ***************************
 
-//Faça um programa que leia o nome e a média de alunos, o programa deverá parar quando o nome de aluno informado for igual a FIM. Quando terminar, o programa deverá informar a média de todos os alunos e o numero de alunos que tiveram suas médias informadas 
-
-criar a classe Alunos, criando e tipando os atributos e os metódos;
-
-entrada de nome e media dos alunos, 
-colocar a cond
+//Ler vários números até obter o finalizador 0. Indicar quantos números quadrados perfeitos (que têm raíz quadrada inteira) foram lidos. 
