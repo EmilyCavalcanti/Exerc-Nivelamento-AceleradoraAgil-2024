@@ -1,0 +1,37 @@
+//Faça um programa que leia um codigo, sexo e um numero de horas trabalhadas de cada funcionario de uma empresa, e informe o salário bruto e o salario liquido de cada um. Ao final da execução seu programa deverá informar também a média dos salarios liquidos dos funcionarios do sexo masculino e do sexo feminino. Considere que: a: cada funcionario recebe R$26,90 por hora trabalhada; b: o salario liquido dos homnes tem um desconto de 10% e das mulheres de 6%; c: as entradas de dados terminarão quando for informado o codigo de usuário '-11'.
+
+
+chamar a entrada de usuario com o readline;
+
+variavel valorHora = 26.90
+salariosM: number []=[]
+salariosF: number []=[]
+
+entrada para a variavel código , e se for =-11 para o programa;
+
+criar um função para receber os dados dos usuarios:
+entrada para a variavel sexo = M ou F;
+entrada para horasTrabalhadas ;
+converter para number
+
+variavel salarioBruto = horasTrabalhadas * valorHora
+criar um if (sexo = M )
+    salarioliquido = salarioBruto - (salarioBruto * 0.10 ) 
+    salariosM.push(salarioliquido)
+
+criar um else if (sexo = F ){
+     salarioliquido = salarioBruto - (salarioBruto * 0.06)
+    salariosF.push(salarioliquido)
+
+
+}
+
+for  (let i = 0, i <= salariosM.length; i++) {
+        salarioM += salarioM[i];
+        mediaSalarioM = salarioM / salariosM.length
+} 
+
+for  (let i = 0, i <= salariosF.length; i++) {
+        salarioF += salarioF[i];
+        mediaSalarioF = salarioF / salariosF.length
+} 
