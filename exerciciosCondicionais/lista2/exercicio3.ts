@@ -7,7 +7,7 @@ const n4:number =8;
 
 
 if(n1 >0 && n2>0 && n3>0 && n4>0){
-    let soma = n1+n2+ n3+ n4
+    const soma = n1+n2+ n3+ n4
     
     console.log(`O resultado da soma é ${soma}`)
 }else{

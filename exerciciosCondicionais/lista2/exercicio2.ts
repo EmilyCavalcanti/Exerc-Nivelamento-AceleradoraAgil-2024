@@ -7,7 +7,7 @@ const thirst:number =6;
 
 if(first >0 && secound>0 && thirst>0){
     
-    let multiplicacao = (first* secound) * thirst
+    const multiplicacao = (first* secound) * thirst
 
     console.log(`O resultado da multiplicacao é: ${multiplicacao}`)
 }else{
