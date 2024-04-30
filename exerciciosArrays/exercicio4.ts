@@ -9,4 +9,8 @@ for(let i =0; i<=30; i++){
     vetor6.push(i);
 }
 
-//vetor7.push(vetor6.reverse());
+for(let i =vetor6[30]; i>=0; i--){
+    vetor7.push(vetor6[i]);
+}
+
+console.log(`${vetor6}\n${vetor7}`)
