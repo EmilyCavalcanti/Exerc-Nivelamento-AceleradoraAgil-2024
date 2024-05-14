@@ -27,5 +27,3 @@ const pokemon = {
       speed: 150
     }
   }
-
-console.log(pokemon.name)

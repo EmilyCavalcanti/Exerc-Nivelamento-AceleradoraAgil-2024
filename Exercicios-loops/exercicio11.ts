@@ -3,13 +3,22 @@
 const positivo = require('readline-sync');
 let conta:number = 0;
 
-function contadorDigitados(){
-    console.log('Digite números positivos e quando quiser parar digite -1')
-    let numeroDigitado = positivo.question('Digite um número: ')
-    let numero:number = Number(numeroDigitado)
-    conta++
 
-    numero==-1?console.log(`O total de números digitados foi ${conta} números`):contadorDigitados() 
+    console.log('Digite números positivos e quando quiser parar digite -1')
+    
+while (true) {
+    let numeroDigitado = positivo.question('Digite um número: ');
+    let numero: number = Number(numeroDigitado);
+
+    if (numero === -1) {
+        break; 
+    }
+
+    if (numero >= 0) {
+        conta++;
+    } else {
+        console.log('Por favor, digite um número válido.');
+    }
 }
 
-contadorDigitados()
+console.log(`O total de números digitados foi ${conta}.`);
